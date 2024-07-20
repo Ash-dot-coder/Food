@@ -26,12 +26,12 @@ readline.question(`Press a number : `, row => {
     }
 
     // Bottom half of the pattern excluding the middle line
-    space2 = 2;
+    space_sec = 2;
     for (let i = row - 1; i >= 1; i--) {
         let str = "";
 
         // Print leading spaces
-        for (let j = 0; j < space2; j++) {
+        for (let j = 0; j < space_sec; j++) {
             str += ' ';
         }
 
@@ -41,7 +41,7 @@ readline.question(`Press a number : `, row => {
         }
 
         console.log(str.trim());
-        space += 2;
+        space_sec += 2;
     }
 
     readline.close();
